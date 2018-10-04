@@ -21,9 +21,9 @@ public class UserInfoServiceImpl implements UserInfoService {
     UserInfoMapper userInfoMapper;
 
     @Override
-    public Boolean register(String username, String password) {
+    public Boolean register(String userName, String password) {
         Map<String, Object> map = new HashMap<>();
-        map.put("userName", username);
+        map.put("userName", userName);
         map.put("password", password);
         Integer result = userInfoMapper.register(map);
         if (result == 1) {

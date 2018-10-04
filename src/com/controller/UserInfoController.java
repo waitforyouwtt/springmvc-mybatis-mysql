@@ -20,9 +20,9 @@ public class UserInfoController {
     UserInfoService userInfoService;
 
     @PostMapping("/user/register")
-    public String register(String username, String password) {
-        if (!"".equals(username) && !"".equals(password)) {
-            Boolean result = userInfoService.register(username, password);
+    public String register(String userName, String password) {
+        if (!"".equals(userName) && !"".equals(password)) {
+            Boolean result = userInfoService.register(userName, password);
             if (result) {
                 // /为了防止刷新页面时表单重复提交
                 return "redirect:/success";

@@ -12,7 +12,7 @@ public interface UserInfoService {
     /**
      * 用户注册	 * @param username	 * @param password	 * @return
      */
-    Boolean register(String username, String password);
+    Boolean register(String userName, String password);
 
     /**
      * 用户登陆	 * @param username	 * @param password	 * @return
